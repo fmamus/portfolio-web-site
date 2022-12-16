@@ -5,122 +5,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3, user-scalable=yes, minimal-ui">
+    <link rel="shortcut icon" href="/imgs/nice-avatar.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" media ="screen and (max-width: 640px)" href ="css/mobile.css">
     <link rel="stylesheet" media ="screen and (max-width: 1200px)" href ="css/tablet.css">
+    <link rel="stylesheet" href="/css/loading.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Furkan MAMUS</title>
 </head>
 
-<body>
-    <header>
-        <div class="container">
-            <div class="menu">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+<body onload="myFunction()">
+
+    <div id="loading">
+        <div class="load">
+            <hr/><hr/><hr/><hr/>
+          </div>
+    </div>
+
+    <div id="website">
+        <header>
+            <div class="container">
+                <div class="menu">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </header>
-
-    <section id="about">
-        <h1>Hey I am Furkan</h1>
-        <h5>a web developer</h5>
-    </section>
-
-    <section id="projects">
-        <h2>These are some of my projects</h2>
-        <div class="container">
-            <div class="cards">
-                <div class="link">
-                    <a href="https://contact-app-zeta.vercel.app" target="_blank">
-                        <img src="imgs/contactApp.png" alt="contact app">
-                        <p>
+        </header>
+    
+        <section id="about">
+            <h1>Hey I am Furkan</h1>
+            <h5>a web developer</h5>
+        </section>
+    
+        <section id="projects">
+            <h2 data-aos="fade-up" data-aos-duration="1000">These are some of my projects</h2>
+            <div class="container">
+                <div class="cards" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="link-image">
+                        <a href="https://contact-app-zeta.vercel.app" target="_blank">
+                            <img src="imgs/contactApp.png" alt="contact app">
+                        </a>
+                    </div>
+                    <div class="link">
+                        <a href="">
                             <span class="figure"><</span>
                             <span>Contact App</span>
                             <span class="figure">/></span>
-                        </p>
-                    </a>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="cards">
-                <div class="link">
-                    <a href="https://to-do-list-tau-one.vercel.app/" target="_blank">
-                        <img src="imgs/toDoList.png" alt="to do list">
-                        <p>
+                <div class="cards" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="link-image">
+                        <a href="https://to-do-list-tau-one.vercel.app/" target="_blank">
+                            <img src="imgs/toDoList.png" alt="to do list">
+                        </a>
+                    </div>
+                    <div class="link">
+                        <a href="">
                             <span class="figure"><</span>
                             <span>To Do List</span>
                             <span class="figure">/></span>
-                        </p>
-                    </a>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="cards">
-                <div class="link">
-                    <a href="https://asian-kitchen-menu-ten.vercel.app/" target="_blank">
-                        <img src="imgs/asianKitchenMenu.png" alt="asian kitchen menu">
-                        <p>
+                <div class="cards" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="link-image">
+                        <a href="https://asian-kitchen-menu-ten.vercel.app/" target="_blank">
+                            <img src="imgs/asianKitchenMenu.png" alt="asian kitchen menu">
+                        </a>
+                    </div>
+                    <div class="link">
+                        <a href="">
                             <span class="figure"><</span>
-                            <span>Asian Kithcen's Menu</span>
+                            <span>Asian Kitchen Menu</span>
                             <span class="figure">/></span>
-                        </p>
-                    </a>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="cards">
-                <div class="link">
-                    <a href="https://product-landing-page-peach-iota.vercel.app/" target="_blank">
-                        <img src="imgs/productLandingPage.png" alt="product landing page">
-                        <p>
+                <div class="cards" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="link-image">
+                        <a href="https://product-landing-page-peach-iota.vercel.app/" target="_blank">
+                            <img src="imgs/productLandingPage.png" alt="product landing page">
+                        </a>
+                    </div>
+                    <div class="link">
+                        <a href="">
                             <span class="figure"><</span>
                             <span>Product Landing Page</span>
                             <span class="figure">/></span>
-                        </p>
-                    </a>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="cards">
-                <div class="link">
-                    <a href="https://tribute-page-one-amber.vercel.app/" target="_blank">
-                        <img src="imgs/tributePage.png" alt="tribute page">
-                        <p>
+                <div class="cards" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="link-image">
+                        <a href="https://tribute-page-one-amber.vercel.app/" target="_blank">
+                            <img src="imgs/tributePage.png" alt="tribute page">
+                        </a>
+                    </div>
+                    <div class="link">
+                        <a href="">
                             <span class="figure"><</span>
                             <span>Tribute Page</span>
                             <span class="figure">/></span>
-                        </p>
-                    </a>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="cards">
-                <div class="link">
-                    <a href="https://technical-documentation-page-sooty.vercel.app/" target="_blank">
-                        <img src="imgs/technicalDocumentationPage.png" alt="technical documentation page">
-                        <p>
+                <div class="cards" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="link-image">
+                        <a href="https://technical-documentation-page-sooty.vercel.app/" target="_blank">
+                            <img src="imgs/technicalDocumentationPage.png" alt="technical documentation page">
+                        </a>
+                    </div>
+                    <div class="link">
+                        <a href="">
                             <span class="figure"><</span>
-                            <span>Documentation Page</span>
+                            <span>Tech</span>
                             <span class="figure">/></span>
-                        </p>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer id="contact">
-        <div class="header">
-            <h2>Let's work together...</h2>
-            <p>How do you take your coffee?</p>
-        </div>
-        <div class="social">
-            <a href="https://www.instagram.com/furkanmamus/" target="_blank"><i class="fa-brands fa-instagram"></i>
-                Instagram</a>
-            <a href="https://github.com/fmamus" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
-            <a href="https://twitter.com/furkanmamus" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a>
-            <a href="mailto: furkanmamus1903@hotmail.com"><i class="fa-solid fa-at" target="_blank"></i> Send a mail</a>
-            <a href="/imgs/Furkan Mamuş Resume.pdf" /download><i class="fa-solid fa-file" target="_blank"></i> CV</a>
-        </div>
-    </footer>
+            <a id="more" href="https://github.com/fmamus" target="_blank" data-aos="fade-up" data-aos-duration="1000">More Projects..</a>
+        </section>
+        <footer id="contact">
+            <div class="header" data-aos="fade-up" data-aos-duration="1000">
+                <h2>Let's work together...</h2>
+                <p>How do you take your coffee?</p>
+            </div>
+            <div class="social" data-aos="fade-up" data-aos-duration="1000">
+                <a href="https://www.instagram.com/furkanmamus/" target="_blank"><i class="fa-brands fa-instagram"></i>
+                    Instagram</a>
+                <a href="https://github.com/fmamus" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+                <a href="https://twitter.com/furkanmamus" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                <a href="mailto: furkanmamus1903@hotmail.com"><i class="fa-solid fa-at" target="_blank"></i> Send a mail</a>
+                <a href="/imgs/Furkan Mamuş Resume.pdf" /download><i class="fa-solid fa-file" target="_blank"></i> CV</a>
+            </div>
+        </footer>
+    </div>
+    
+      
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/javascript/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
